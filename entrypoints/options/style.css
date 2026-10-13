@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, Segoe UI, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+.hint {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.folder-card,
+.pinned-card {
+  border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.folder-card .row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.folder-card input[type='text'] {
+  flex: 1;
+  padding: 0.3rem 0.5rem;
+}
+
+.folder-card select {
+  padding: 0.3rem 0.4rem;
+}
+
+.folder-tabs {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+button.danger {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+#add-folder-btn {
+  margin: 0.4rem 0 1.5rem;
+}
+
+.pinned-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+#save-status {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  min-height: 1.2em;
+}
